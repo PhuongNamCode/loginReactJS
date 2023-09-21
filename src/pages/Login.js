@@ -16,6 +16,10 @@ export default function Login() {
         }
     };
 
+    const handleSignup = () => {
+        navigate("/signup")
+    };
+
     return (
         <div className="limiter">
             <div className="container-login100">
@@ -60,16 +64,16 @@ export default function Login() {
                             <div className="wrap-login100-form-btn">
                                 <div className="login100-form-bgbtn"></div>
 
-                                <button className="login100-form-btn" onClick={handleLogin}>
+                                <button className="login100-form-btn btn-login" onClick={handleLogin}>
                                     Login
                                 </button>
                             </div>
                         </div>
 
                         <div className="text-center p-t-115">
-                            <span className="txt1">Don’t have an account?</span>
+                            <span className="txt1">Don’t have an account ? </span>
 
-                            <a className="txt2" href="#">
+                            <a className="txt2" onClick={handleSignup} href="#">
                                 Sign Up
                             </a>
                         </div>

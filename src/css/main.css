@@ -137,6 +137,20 @@ iframe {
 	border: none !important;
 }
 
+/* CSS for the red login button */
+.btn-login {
+  background-color: #e74c3c; /* Red color */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Added transition property */
+}
+
+.btn-login:hover {
+  background-color: #c0392b; /* Darker red color */
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
